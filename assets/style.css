@@ -4,7 +4,16 @@
     color: navy
 }
 */
-
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("city-buildings-night.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 * 
 {
@@ -68,23 +77,48 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5)
+    
 }
 
 #home::before
 {
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-background-image: url("images/image1.jpg");
-background: beige;
-height: 900px;
-width: 100%;
-z-index: -1;
-opacity: .8;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*
+    background-image: url("image1.jpg") no-repeat center center/cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain/cover; */
+    background: darkgray;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
 }
 
+.main
+{
+    display: flex;
+    flex-direction: column;
+   /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
 
+.headings
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+
+}
+
+/* ABOUT ME SECTION */
 
 
 

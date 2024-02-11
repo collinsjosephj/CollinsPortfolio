@@ -138,6 +138,7 @@ body
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    flex-wrap: wrap;
     padding: 20px;  
     margin-bottom: 50px;
 }
@@ -170,6 +171,7 @@ body
 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     align-items: center;

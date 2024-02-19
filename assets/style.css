@@ -71,6 +71,8 @@ body
 }
 
 /* Home Section */
+
+/*container---might use this later*/
 #home
 {
     display: flex;
@@ -81,7 +83,7 @@ body
 #home::before
 {
     content: "";
-    position: absolute;
+   /* position: absolute; */
     top: 0;
     right: 0;
     background-image: url("./assets/images/image2894.jpg");
@@ -90,22 +92,37 @@ body
     background-size: contain/cover; 
     background: darkgray;
     height: 900px;
-    width: 100%;
+    width: 100%; 
     z-index: -1;
     opacity: .8;
 }
-
+/* image responsive pulled from https://www.w3schools.com/howto/howto_css_image_responsive.asp
+to make my profile picture scale correctly **** playing with this and removing height and width from #home::before*/
+/*.responsive 
+{
+    max-width: 100%;
+    height: auto;
+} */
 .main
 {
     display: flex;
     flex-direction: column;
    /* border: 1px solid white; */
     align-items: center;
-    position: absolute;
+   /*position: absolute; */
     top: 30%;
     right: 10%;
 }
 
+/*card CSS will likely be moved*/
+.card
+{
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: dotted;
+    border-width: 1px;
+}
 .headings
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -144,8 +161,10 @@ body
 }
 #pic
 {
-    display: flex;
+    /* display: flex; */
+    flex: 0 0 100%;
 }
+/* come back and adjust later*/
 #pic img
 {
     width: 575px;
@@ -175,7 +194,7 @@ body
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
 }
 .gallery
 {
@@ -187,6 +206,11 @@ body
     width: 360px;
     height: 240px;
     margin: 10px;
+}
+.column
+{
+    display: flex;
+    flex-direction: column;
 }
 .row 
 {
